@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allession's Pizzaria</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body>
+    <header class="w-full bg-black">
+        <nav class="relative bg-black">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-center">
+            <!-- Menu desktop -->
+            <div class="hidden sm:flex gap-9 space-x-4 text-white">
+            	<a href="index.html" class="hover:text-gray-400 cursor-pointer font-bold">Home</a>
+                <a href="#sobre" class="hover:text-gray-400 cursor-pointer font-bold">Sobre Nós</a>
+                <a href="#cardapio" class="hover:text-gray-400 cursor-pointer font-bold">Cardápio</a>
+                <a href="#contato" class="hover:text-gray-400 cursor-pointer font-bold">Contato</a>
+            </div>
+            
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu mobile-->
+                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-white">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </button>
+            </div>
+            
+        </div>
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+            <a href="index.html" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+            <a href="#sobre" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Sobre Nós</a>
+            <a href="#cardapio" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Cardápio</a>
+            <a href="#contato" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contato</a>
+            </div>
+        </el-disclosure>
+        </nav>
+    </header>
+    <div class="relative">
+         <img class="h-60 w-full object-cover" src="./src/img/njkxcwtmu73hdilt05iak911q444.jpg" alt="banner">
+         <div class=" absolute text-center sm:absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30">
+            <h1 class="text-4xl font-bold">Bem-vindo à Allession's!</h1>
+            <p class="mt-2">Saborosas Pizzas feitas especialmente para você</p>
+            <button class=" mt-4 bg-yellow-300 rounded-sm text-black text-base p-2 font-bold hover:cursor-pointer hover:bg-yellow-100">Ver Cardápio</button>
+         </div>
+    </div>
+    <main>
+        <section id="cardapio">
+            <h1 class="text-center mt-5 font-bold text-4xl">Cardárpio</h1>
+            <div class="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-10 justify-items-center max-w-5xl mx-auto">
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza1">
+                    <h2 class="text-center mt-auto font-bold">Pizza Marguerita</h2>
+                    <p class="p-2">Mussarela de búfala, molho de tomate e manjericão fresco.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza2">
+                    <h2 class="text-center mt-auto font-bold">Pizza Pepperoni</h2>
+                    <p class="p-2">Mussarela,molho de tomate,pimentão em rodelas,salame italiano.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza3">
+                    <h2 class="text-center accent-auto font-bold">Pizza Quatro Queijos</h2>
+                    <p class="p-2">Gorgonzola,molho de tomate, parmesão, provolone e mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza4">
+                    <h2 class="text-center mt-auto font-bold">Pizza Calabresa</h2>
+                    <p class="p-2">Calabresa,molho de tomate, cebola, mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza5">
+                    <h2 class="text-center mt-auto font-bold">Pizza Vegetariana</h2>
+                    <p class="p-2">Espinafre,molho de tomate, mussarela, ricota defumada e espinafre refogado.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza6">
+                    <h2 class="text-center mt-auto font-bold">Pizza Frango com catupiry</h2>
+                    <p class="p-2">Frango desfiado,molho de tomate, mussarela, catupiry e milho.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza7">
+                    <h2 class="text-center mt-auto font-bold">Pizza Portuguesa</h2>
+                    <p class="p-2">Presunto,molho de tomate, ovo, azeitonas e mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza8">
+                    <h2 class="text-center mt-auto font-bold">Pizza Supreme</h2>
+                    <p class="p-2">Pepperoni,molho de tomate, pimentões,cebola,azeitonas e mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza9">
+                    <h2 class="text-center mt-auto font-bold">Pizza Tropical</h2>
+                    <p class="p-2">Presunto,molho de tomate, abacaxi e mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza10">
+                    <h2 class="text-center mt-auto font-bold"> Pizza Marguerita Especial</h2>
+                    <p class="p-2">Azeite de oliva,manjericão,molho de tomate, tomate fresco e mussarela de búfala.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza11">
+                    <h2 class="text-center mt-auto font-bold">Pizza Carne de Sol</h2>
+                    <p class="p-2">Carne de sol desfiada,cebola roxa,molho de tomate e mussarela.</p>
+                </div>
+                <div class="w-[80%] sm:w-80 bg-gray-200">
+                    <img class="h-52 w-full rounded-sm" src="./src/img/wt6zxilh2kuil95ac3c9m1plil0r.jpg" alt="pizza12">
+                    <h2 class="text-center mt-auto font-bold">Pizza Caprese</h2>
+                    <p class="p-2">Azeite de oliva,manjericão,molho de tomate, tomate fresco e mussarela de búfala.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="relative">
+                <img class="mt-10 h-40 sm:h-50 w-full object-cover" src="./src/img/9juv4s551xfskgjmbz6jsau2hbk2.jpg" alt="sobre">
+                <div class="absolute text-center sm:absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30">
+                    <h1 class="text-2xl sm:text-4xl font-bold">Sobre Nós!</h1>
+                    <p class="mt-2 sm:text-xl">Nossa pizzaria é dedicada a criar as melhores pizzas do mundo com ingredientes frescos e receitas exclusivas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h1 class="text-center mt-5 font-bold text-3xl">Contato</h1>
+            <p class="text-center mt-5">Entre em contato conosco para fazer pedidos ou tirar suas dúvidas</p>
+            <div class="flex flex-col sm:flex-row  mt-12 gap-5 sm:gap-10 w-full sm:max-w-5xl mx-auto">
+                <div>
+                    <p><b>Endereço:</b> Avenida Quize de Outubro,N°123  Minas Gerais - CEP:12345-678</p>
+                </div>
+                <div>
+                    <p><b>Telefone:</b> (11)5555-5555</p>
+                    <p><b>Email:</b><span class="text-amber-300  sm:text-yellow-300 font-bold sm:underline decoration-1">contato@contato.com<span></p>
+                </div>
+                <div>
+                    <p><b>Horário de Funcionamento:</b> De segunda a sábado 11:00 às 23:00-Domingos 16:00 às 23:00.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class=" mb-8 mt-10 p-2 font-bold rounded-md bg-yellow-300 hover:cursor-pointer hover:bg-amber-100">Peça agora mesmo!</button>
+            </div>
+        </section>
+        <button aria-label="voltar ao topo"  class="fixed right-2 bottom-16 bg-yellow-300 p-2 shadow-lg z-50 hidden btn-scroll-top">
+            <img src="./src/img/up.png" alt="up" class="h-5 w-6">
+        </button>
+    </main>
+    <footer>
+        <div class="absolute w-full bg-black mb-0">
+            <p class="bg-black text-center text-yellow-300 p-5 font-bold">&copy; Allession's Pizzaria</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="./src/js/voltaraotopo.js"></script>
+</body>
+</html>
